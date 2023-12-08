@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Website Form</title>
+
+    <style type="text/css" media="all">@import "css/customize.css";</style>
+    <link rel="stylesheet" href="customize.css"/>
+
+    <style> @font-face {
+        font-family: 'TenorSans-Regular';
+        src: url('./fonts/TenorSans-Regular.ttf');
+      }
+      @font-face{
+        font-family: 'Prata-Regular';
+        src: url('./fonts/Prata-Regular.ttf');
+      }
+      @font-face{
+        font-family: 'ImperialScript-Regular';
+        src: url('./fonts/ImperialScript-Regular.ttf');
+      }
+      
+    </style>
+
+  </head>
+
+    <header>
+        <div id="container">
+          <div id="banner">
+              <img src="img/logo.png" alt="logo"/>
+          </div>
+          <div id="banname">
+            <p class="heading">Rise 'N' Bowl</p>
+          </div>
+      </div>
+      <div id="directory">
+          <ul class="flex-container">
+              <li><a href="index.html">Home</a></li>
+               <li><a href="menu.html">Menu</a></li>
+               <li><a href="customize.html">Customize!</a></li>  
+               <li><a href="about.html">About Us</a></li>
+               <li><a href="testimonials.html">Testimonials</a></li>
+             </ul>
+        </div>
+      <hr>    
+    
+      </header>
+
+      <body>
+
+    <h1>Order Form</h1>
+    <p class="subheading">Please fill out all the information for the best service we can provide.</p>
+    <br></br>
+    <form id="customform">
+        <h2>Personal Details</h2>
+        <fieldset>
+            <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" required /></label>
+            <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+            <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+        </fieldset>
+        <h2>Customize Your Meal!</h2>
+        <fieldset>
+            <label for="milk">Pick your milk:
+                <select id="milk" name="milk">
+                    <option value="">(select one)</option>
+                    <option value="1">Oat Milk</option>
+                    <option value="2">Almond Milk</option>
+                    <option value="3">Soy Milk</option>
+                    <option value="4">Skim Milk</option>
+                    <option value="5">Whole Milk</option>
+                </select>
+            </label>
+            <label for="mix-in">Mix-in with the oatmeal</label>
+                <select id="mix-in" name="mix-in">
+                    <option value="">(select one)</option>
+                    <option value="1">None</option>
+                    <option value="2">Cinnamon</option>
+                    <option value="3">Peanut Butter</option>
+                    <option value="4">Bananas</option>
+                    <option value="5">Blueberries</option>
+                    <option value="6">Cocoa Powder</option>
+                    <option value="7">Maple Syrup</option>
+                </select>
+            </label>
+            <label for="toppings">Pick Topping 1:</label>
+                <select id="toppings" name="toppings">
+                    <option value="">(select one)</option>
+                    <option value="1">None</option>
+                    <option value="2">Blueberries</option>
+                    <option value="3">Chocolate</option>
+                    <option value="4">Strawberries</option>
+                    <option value="5">Raspberries</option>
+                    <option value="6">Toasted Nuts (Pistachios+Peanuts+Almonds)</option>
+                    <option value="7">Bananas</option>
+                    <option value="8">Apples</option>
+                </select>
+            </label>
+            <label for="toppings">Pick Topping 2:</label>
+                <select id="toppings" name="toppings">
+                    <option value="">(select one)</option>
+                    <option value="1">None</option>
+                    <option value="2">Blueberries</option>
+                    <option value="3">Chocolate</option>
+                    <option value="4">Strawberries</option>
+                    <option value="5">Raspberries</option>
+                    <option value="6">Toasted Nuts (Pistachios+Peanuts+Almonds)</option>
+                    <option value="7">Bananas</option>
+                    <option value="8">Apples</option>
+                </select>
+            </label>
+            <label for="toppings">Pick Topping 3:</label>
+                <select id="toppings" name="toppings">
+                    <option value="">(select one)</option>
+                    <option value="1">None</option>
+                    <option value="2">Blueberries</option>
+                    <option value="3">Chocolate</option>
+                    <option value="4">Strawberries</option>
+                    <option value="5">Raspberries</option>
+                    <option value="6">Toasted Nuts (Pistachios+Peanuts+Almonds)</option>
+                    <option value="7">Bananas</option>
+                    <option value="8">Apples</option>
+                </select>
+            </label>
+        </fieldset>
+        <h2>When Are You Picking It Up?</h2>
+        <fieldset>
+            <label for="date">Pick a Date (Please give us one day to prepare your meal): <input type="date" id="date" min="today" required/></label>
+            <label for="time">Pick a Time (Between 10am - 6pm): <input type="time" id="time" placeholder="enter time" name="pick-up-time"  value="time" min="10:00" max="18:00" required/></label>
+        </fieldset>
+        <fieldset>
+            <button type="submit" onclick="submit">Submit</button>
+        </fieldset>
+    </form>
+    <script>
+       let Form = document.getElementById("customform");
+       Form.addEventListener("submit", (e));{
+        alert("This form has been successfully submitted!");
+       }
+    </script>
+
+<footer>
+
+    <div class="bansocial">
+      <img class="social" src="img/bansocial.png"/>
+
+      <p class="link">   www.risenbowlmenu.com</p>
+      <p class="copyright">   © 2023 Rise ‘N’ Bowl Company. All Rights Reserved </p>
+    </div>
+
+  </footer>
+
+    </body>
